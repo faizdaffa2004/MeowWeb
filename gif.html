@@ -22,7 +22,8 @@
 </head>
 <body>
     <nav>
-        <ul>
+         <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+         <ul id="menu">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gif.html">GIF</a></li>
@@ -30,6 +31,11 @@
             <li><a href="contact.html">Contact</a></li>
          </ul>
     </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <h1>Random Cat GIFs</h1>
     <div id="cat-gifs" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
     <button onclick="fetchCatGIFs()">Load More GIFs</button>
@@ -59,6 +65,9 @@
             }
         }
         fetchCatGIFs();
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("active");
+        }
     </script>
 </body>
 </html>

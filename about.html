@@ -22,7 +22,8 @@
 </head>
 <body>
     <nav>
-        <ul>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gif.html">GIF</a></li>
@@ -54,6 +55,9 @@
             }
         }
         fetchFacts();
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("active");
+        }
     </script>
 </body>
 </html>

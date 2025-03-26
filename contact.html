@@ -52,7 +52,8 @@
 <body>
 
     <nav>
-        <ul>
+         <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+         <ul id="menu">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gif.html">GIF</a></li>
@@ -70,6 +71,10 @@
             <p><strong>Email:</strong> <a href="mailto:faizdaffa282004@gmail.com">faizdaffa282004@gmail.com</a></p>
         </div>
     </div>
-
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

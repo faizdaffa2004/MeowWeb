@@ -15,13 +15,13 @@
             color: white;
             text-align: center;
         }
-
+        
     </style>
 </head>
 <body>
-
     <nav>
-        <ul>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gif.html">GIF</a></li>
@@ -34,5 +34,10 @@
         <p class="cat-quote">"Behind every cute cat photo is a master of naps, curiosity, and mischief."</p>
     </div>
 
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
